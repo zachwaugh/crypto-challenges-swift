@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9284EC6C199FCB3700099035 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284EC5A199E951B00099035 /* main.swift */; };
+		9284EC6D199FCB3900099035 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284EC61199E959600099035 /* utilities.swift */; };
+		9284EC6E199FCB3C00099035 /* set1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284EC67199EB49600099035 /* set1.swift */; };
+		92E8F221199FF55900D794DB /* Crypto_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8F220199FF55900D794DB /* Crypto_challengeTests.swift */; };
+		92E8F225199FF5E400D794DB /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284EC61199E959600099035 /* utilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9284EC57199E951B00099035 /* Crypto-challenge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Crypto-challenge"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9284EC5A199E951B00099035 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9284EC61199E959600099035 /* utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		9284EC67199EB49600099035 /* set1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = set1.swift; sourceTree = "<group>"; };
+		92E8F21C199FF55900D794DB /* Crypto-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E8F21F199FF55900D794DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E8F220199FF55900D794DB /* Crypto_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_challengeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9284EC54199E951B00099035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8F219199FF55900D794DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9284EC4E199E951B00099035 = {
+			isa = PBXGroup;
+			children = (
+				9284EC59199E951B00099035 /* Source */,
+				92E8F21D199FF55900D794DB /* Tests */,
+				9284EC58199E951B00099035 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9284EC58199E951B00099035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9284EC57199E951B00099035 /* Crypto-challenge */,
+				92E8F21C199FF55900D794DB /* Crypto-challengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9284EC59199E951B00099035 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9284EC5A199E951B00099035 /* main.swift */,
+				9284EC67199EB49600099035 /* set1.swift */,
+				9284EC61199E959600099035 /* utilities.swift */,
+			);
+			name = Source;
+			path = src;
+			sourceTree = "<group>";
+		};
+		92E8F21D199FF55900D794DB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92E8F220199FF55900D794DB /* Crypto_challengeTests.swift */,
+				92E8F21E199FF55900D794DB /* Supporting Files */,
+			);
+			name = Tests;
+			path = "Crypto-challengeTests";
+			sourceTree = "<group>";
+		};
+		92E8F21E199FF55900D794DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92E8F21F199FF55900D794DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9284EC56199E951B00099035 /* Crypto-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9284EC5E199E951B00099035 /* Build configuration list for PBXNativeTarget "Crypto-challenge" */;
+			buildPhases = (
+				9284EC53199E951B00099035 /* Sources */,
+				9284EC54199E951B00099035 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto-challenge";
+			productName = Cryptopals;
+			productReference = 9284EC57199E951B00099035 /* Crypto-challenge */;
+			productType = "com.apple.product-type.tool";
+		};
+		92E8F21B199FF55900D794DB /* Crypto-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E8F222199FF55900D794DB /* Build configuration list for PBXNativeTarget "Crypto-challengeTests" */;
+			buildPhases = (
+				92E8F218199FF55900D794DB /* Sources */,
+				92E8F219199FF55900D794DB /* Frameworks */,
+				92E8F21A199FF55900D794DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto-challengeTests";
+			productName = "Crypto-challengeTests";
+			productReference = 92E8F21C199FF55900D794DB /* Crypto-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9284EC4F199E951B00099035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Zach Waugh";
+				TargetAttributes = {
+					9284EC56199E951B00099035 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					92E8F21B199FF55900D794DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 9284EC52199E951B00099035 /* Build configuration list for PBXProject "Crypto-challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9284EC4E199E951B00099035;
+			productRefGroup = 9284EC58199E951B00099035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9284EC56199E951B00099035 /* Crypto-challenge */,
+				92E8F21B199FF55900D794DB /* Crypto-challengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92E8F21A199FF55900D794DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9284EC53199E951B00099035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9284EC6E199FCB3C00099035 /* set1.swift in Sources */,
+				9284EC6D199FCB3900099035 /* utilities.swift in Sources */,
+				9284EC6C199FCB3700099035 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E8F218199FF55900D794DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8F225199FF5E400D794DB /* utilities.swift in Sources */,
+				92E8F221199FF55900D794DB /* Crypto_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9284EC5C199E951B00099035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9284EC5D199E951B00099035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9284EC5F199E951B00099035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Crypto-challenge";
+			};
+			name = Debug;
+		};
+		9284EC60199E951B00099035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Crypto-challenge";
+			};
+			name = Release;
+		};
+		92E8F223199FF55900D794DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Crypto-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92E8F224199FF55900D794DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Crypto-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9284EC52199E951B00099035 /* Build configuration list for PBXProject "Crypto-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9284EC5C199E951B00099035 /* Debug */,
+				9284EC5D199E951B00099035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9284EC5E199E951B00099035 /* Build configuration list for PBXNativeTarget "Crypto-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9284EC5F199E951B00099035 /* Debug */,
+				9284EC60199E951B00099035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E8F222199FF55900D794DB /* Build configuration list for PBXNativeTarget "Crypto-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E8F223199FF55900D794DB /* Debug */,
+				92E8F224199FF55900D794DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9284EC4F199E951B00099035 /* Project object */;
+}
