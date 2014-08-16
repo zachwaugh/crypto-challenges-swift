@@ -44,13 +44,13 @@ func challenge3() -> Bool {
 
 // Challenge 4 - http://cryptopals.com/sets/1/challenges/4/
 func challenge4() -> Bool {
-    let dir = __FILE__.stringByDeletingLastPathComponent!
-    // Challenge 4 can take a while, outputs "." to show it's still working
-    let input = String.stringWithContentsOfFile(dir + "/challenge4-data.txt", encoding: NSUTF8StringEncoding, error: nil)!.componentsSeparatedByString("\n")
+    let input = readFile("challenge4-data.txt").componentsSeparatedByString("\n")
+    
     // This was found originally using this function, just here to make sure it still works
     let expected = "Now that the party is jumping"
     var results: [Score] = []
     
+    // Challenge 4 can take a while, outputs "." to show it's still working
     for text in input {
         let decoded = decodeHex(text)
         let scores = scoreAllCharacters(decoded)
@@ -61,8 +61,9 @@ func challenge4() -> Bool {
         }
     }
     
-    let ranked = sorted(results, { (a: Score, b: Score) -> Bool in a.number > b.number })
+    let ranked = sorted(results, { $0.number > $1.number })
     let best = ranked.first!
+
     return best.text == expected
 }
 
@@ -87,9 +88,7 @@ func challenge5() -> Bool {
 
 // Challenge 6 - http://cryptopals.com/sets/1/challenges/6/
 func challenge6() -> Bool {
-    let dir = __FILE__.stringByDeletingLastPathComponent!
-    // Challenge 4 can take a while, outputs "." to show it's still working
-    let input = String.stringWithContentsOfFile(dir + "/challenge6-data.txt", encoding: NSUTF8StringEncoding, error: nil)!
+    let input = readFile("challenge6-data.txt")
     
     return false
 }

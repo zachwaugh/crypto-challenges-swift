@@ -8,6 +8,12 @@
 
 import Foundation
 
+func readFile(file: String) -> String {
+    // Convenience function to read file specifically for this project
+    let dir = __FILE__.stringByDeletingLastPathComponent!
+    return String.stringWithContentsOfFile(dir + "/\(file)", encoding: NSUTF8StringEncoding, error: nil)!
+}
+
 // String subscript extension borrowed from http://oleb.net/blog/2014/07/swift-strings/
 extension String {
     subscript(integerIndex: Int) -> Character {
@@ -25,8 +31,8 @@ extension String {
 
 func decodeHex(string: String) -> [Byte] {
     var bytes: [Byte] = []
-    for var i = 0; i < countElements(string); i+=2 {
-        let range = Range<Int>(start: i, end: i+2)
+    for var i = 0; i < countElements(string); i += 2 {
+        let range = Range<Int>(start: i, end: i + 2)
         let substring = string[range]
         var byte: CUnsignedInt = 0
         NSScanner(string: substring).scanHexInt(&byte)
@@ -113,7 +119,7 @@ func scoreAllCharacters(buffer: [Byte]) -> [Score] {
     var characters = Array(32...126)
     
     let scores = characters.map { (i: Int) -> Score in
-        let result = stringifyBuffer(xorBuffer(buffer, i))
+        let result = stringifyBuffer(xorBuffer(buffer, i)).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         let score = computeScore(result)
         return Score(text: result, number: score)
     }
